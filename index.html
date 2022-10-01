@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/projects.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <h1 class="logo" id="logo" onclick="scrollToTop()">RT.</h1>
+        <nav>
+            <ul>
+                <li class="nav-item" onclick="scrollToTop()">Home</li>
+                <li class="nav-item" onclick="scrollToLearnMore()">Learn More</li>
+                <li class="nav-item" onclick="scrollToProjects()">Projects</li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container" id="front-page">
+            <div class="column-one">
+                <header class="main-header">
+                    <h1 id="typing">Hello, my name is Remy!</h1>
+                    <p class="sub-heading">I am a second year <strong>Computer Science student</strong> at Aston University. I am extremely <strong>self motivated</strong>
+                        and <strong>passionate</strong> about the future of tech. I'm currently <strong>searching for a 2023 work placement</strong> so I can continue to
+                        grow as a developer by working on real world projects.</p>
+                </header>
+
+                <div class="button-container">
+                    <button class="button second" onclick="scrollToProjects()">Projects</button>
+                    <button class="button main" id="learn-more-button" onclick="scrollToLearnMore()">Learn More</button>
+                </div>
+            </div>
+
+            <div class="column-two">
+                <img class="image" height="500" width="500" src="./img/Software_Engineering_600x600.jpg" alt="Picture of a laptop with code.">
+            </div>
+        </div>
+
+        <div class="container fade-in" id="learn-more">
+            <div class="column-one">
+                <header class="main-header">
+                    <h1>Here are some things about me:</h1>
+                </header>
+
+                <section class="learn-more-section" id="skills">
+                    <h2 class="section-header">Skills:</h2>
+                    <div class="section-content">
+                        <p>I am <strong>hard working</strong>, a great <strong>problem solver</strong>, <strong>adaptable</strong> and a <strong>strong communicator</strong>. I have great <strong>organisational</strong> skills and fit well as part of a <strong>team</strong> or <strong>independently</strong>.</p>
+                        <br>
+                        <p><strong>Technical Skills:</strong></p>
+                        <ul class="skill-list">
+                            <li class="skill">HTML/CSS: ★★★★★</li>
+                            <li class="skill">JavaScript: ★★★★★</li>
+                            <li class="skill">React: ★★★★</li>
+                            <li class="skill">Node.js: ★★★★</li>
+                            <li class="skill">Java: ★★★</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="learn-more-section" id="education">
+                    <h2 class="section-header">Education:</h2>
+                    <div class="section-content">
+                        <p class="learn-more-p">While at college I studied <strong>IT Level 3</strong> where I achieved <strong>D*D*D*</strong>. This taught me about <strong>IT Hardware</strong>, <strong>Cyber Security</strong> and <strong>Game Development</strong>.</p>
+                        <br>
+                        <p class="learn-more-p">
+                            During my time at university I have studied a variety of topics including <strong>Object Oriented Programming</strong>, <strong>Mathematics</strong>, <strong>Computer Systems</strong>
+                            and <strong>Internet Applications and Databases</strong>. These have given me a great foundation in Computer Science and will form the basis of
+                            my future studies. <strong>My overall grade for my first year was 80%.</strong>
+                        </p>
+                        <br>
+                        <p class="learn-more-p">
+                            In my own time I have studied <strong>Full-Stack Development</strong> and <strong>Data Structures & Algorithms</strong>
+                            from a variety of resources including <strong>Books</strong>, <strong>CodeCademy</strong>, <strong>Udemy</strong>, <strong>FreeCodeCamp</strong>, <strong>LeetCode</strong> and <strong>YouTube</strong>.
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="learn-more-section" id="work-experience">
+                    <h2 class="section-header">Work Experience:</h2>
+
+                    <div class="section-content">
+                        <p>
+                            <strong>2019:</strong> While at college I completed a <strong>3 month work placement</strong> at <strong>Accomplish Group</strong> where I worked in the <strong>IT Department</strong>. I spent time with the <strong>IT
+                                Support</strong> team where I learned to <strong>assemble and disassemble PC's</strong>, <strong>troubleshoot issues</strong> and set up work phones to be given out to employees.
+                        </p>
+                        <br>
+                        <p>
+                            <strong>2021-Present:</strong> Currently I work part-time as a housekeeper at <strong>Bromsgrove Hotel & Spa</strong>.
+                        </p>
+                    </div>
+
+                </section>
+
+            </div>
+            <div class="column-two">
+                <img class="image" height="500" width="500" src="./img/Aston.png" alt="Photo of Aston University">
+                <br>
+                <blockquote>Aston University</blockquote>
+            </div>
+        </div>
+
+        <div class="container" id="projects">
+            <header class="main-header">
+                <h1>Projects:</h1>
+
+                <p class="sub-heading">
+                    Each project was built completely from scratch in my own time. The source code for all projects can be found on my GitHub linked at the bottom of the page.
+                </p>
+            </header>
+
+            <div class="projects">
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-header" id="header-highlight">
+                            <h2>Eventsite</h2>
+                        </div>
+
+                        <div class="project-description">
+                            <p>Eventsite is a full-stack application that allows users to search for events in their local area. It was created using React, Node.js, Express and MongoDB. Users can create an account to save up to 4 events to their profile and view other profiles by visiting their url.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/Eventsite.png" alt="Eventsite app" />
+                        </div>
+                        <div class="project-button">
+                            <a href="https://nifty-spence-b0db04.netlify.app/" target="_blank">
+                                <button class="button main">See Live!</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>React ToDo</h2>
+                        </div>
+
+                        <div class="project-description">
+                            <p>This is a simple ToDo list created using React, Node.js, Express and MongoDB. Users are able to add and remove tasks from their list and sort them by completed and incomplete.</p>
+                        </div>
+
+                        <div class="project-img">
+                            <img src="./img/ToDo.png" alt="React todo app" />
+                        </div>
+                        <div class="project-button">
+                            <a href="https://infallible-carson-299ebf.netlify.app/" target="_blank">
+                                <button class="button main">See Live!</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Pokedex</h2>
+                        </div>
+
+                        <div class="project-description">
+                            <p>This is a pokedex application created using JavaScript, HTML and CSS. It uses the PokeAPI to fetch data about each pokemon and displays them on the screen.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/Pokedex.png" alt="Pokedex app" />
+                        </div>
+                        <div class="project-button">
+                            <a href="https://remerdy1.github.io/Pokedex/" target="_blank">
+                                <button class="button main">See Live!</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Rock Paper Scissors</h2>
+                        </div>
+
+                        <div class="project-description">
+                            <p>This is a simple Rock Paper Scissors game created in JavaScript, HTML & CSS.</p>
+                        </div>
+                        <div class="project-img">
+                            <img src="./img/RockPaperScissors.png" alt="Rock Paper Scissors app" />
+                        </div>
+                        <div class="project-button">
+                            <a href="https://remerdy1.github.io/Rock-Paper-Scissors/" target="_blank"><button class="button main">See Live!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by Remy Thompson</p>
+
+            <div class="icons">
+                <a target="_blank" href="https://github.com/remerdy1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/remy-thompson-697479203/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+
+                <a href="mailto:remythompson2002@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                        <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>

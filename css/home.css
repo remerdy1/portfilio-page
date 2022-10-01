@@ -1,0 +1,151 @@
+/*Home page*/
+
+#typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+#typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 4rem;
+    border-right: 1px solid gray;
+    animation: flash 1s infinite ease;
+}
+
+@keyframes flash {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 100px - 15vh);
+    width: 100%;
+}
+
+.column-one,
+.column-two {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+.column-two {
+    justify-content: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(0);
+    transition: filter 1s;
+    box-shadow: 5px 5px 10px rgb(32, 32, 32);
+}
+
+.image:hover {
+    filter: grayscale(1);
+}
+
+
+/*Learn more*/
+
+.learn-more-section {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    max-width: 75%;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.learn-more-section:hover {
+    transition: 1s;
+    box-shadow: 5px 5px 10px rgb(70, 70, 70);
+}
+
+.section-header {
+    margin-bottom: 1rem;
+    color: white;
+    background-color: #eb4d4b;
+    padding-left: 1rem;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
+
+.skill-list {
+    columns: 3;
+    padding: 1rem;
+}
+
+.skill {
+    list-style-type: square;
+}
+
+hr {
+    border: 1px dashed #000;
+    width: 75%;
+    margin: 1rem 0;
+}
+
+.interest {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 410px) {
+    .container {
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-heading {
+        width: 90vw;
+    }
+
+    .learn-more-section {
+        width: 100vw;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 1294px) {
+    .skill-list {
+        columns: 1;
+    }
+
+    .column-one {
+        align-items: center;
+    }
+}
